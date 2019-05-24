@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calorie Calculator</title>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width , initial-scale=1.0" >
+</head>
+<body>
+<div class="nav">
+	<a href="algo.html" id="about">About</a>
+
+	<a href="https://www.instagram.com/abeshekram/" id="how">Contact</a>
+	</div>
+<div id="display0">
+	<h1 id="h1">A Website designed to make you fit</h1>
+	<button id="btn0">Get Started</button>
+
+</div>
+
+<div id="display1">
+	<h2 id="userdetails">User Details</h2>
+    <h3 id="alertuser"></h3>
+	<label for="username">Name</label><br>
+	<input type="text" name="name" id="username" required>
+    <br><br><br>
+
+	<label for="age">Age</label><br>
+	<input type="number" name="age" id="age"  placeholder="  (in yrs)">
+     <br><br><br>
+	<label for="height">Height</label><br>
+	<input type="number" name="height" id="height"  placeholder="  (in cms)">
+     <br><br><br>
+	<label for="weight">Weight</label><br>
+	<input type="number" name="weight" id="weight"  placeholder="  (in Kgs)">
+	<br><br><br>
+	<label for="gender">Male</label>
+	<input type="radio" name="gender" value="male" id="male" onclick="findgender()">
+	<label for="female">Female</label>
+	<input type="radio" name="gender" value="female" id="female" onclick="findgender()">
+    <br><br><br>
+	<button id="submit">submit</button>
+    <button id="reset">reset</button>
+</div>
+
+
+
+
+
+<section id="display2">
+	<div id="h2results">
+	<h2 >Your body condition as per BMI <br><span id="bodycon" class="res"></span></h2>	
+	<h2>Suggested Diet                 <br><span id="diet" class="res"></span></h2>
+	<h2 >Daily water consumption        <br><span id="water" class="res"></span></h2>
+	<h2 >Calories requirement per day   <br><span id="calo" class="res"></span></h2>
+	 <label for="customcal"><strong>Set calorie limit</strong></label>
+    <input type="number" name="" id="customcal">
+    <input type="submit" name="" id="submit0">
+    </div><br><br>
+    <div id="table1">
+    <h2 id="m">Macronutrients Requirement (per day)</h2>
+   
+    <div id="macrotable">
+	
+
+	<table>
+		<tr>
+			<td> </td>
+		<td ><strong>Carbohydrates</strong></td>
+		<td ><strong>Proteins</strong></td>
+		<td><strong>Fat</strong></td>
+		</tr>
+		<tr>
+			<td><strong>Grams</strong> per day </td>
+			<td id="carbg"></td>
+			<td id="protg"></td>
+			<td id="fatg"></td>
+		</tr>
+		<tr>
+			>
+			<td><strong>Calories</strong> per day </td>
+			<td id="carbcal"></td>
+			<td id="protcal"></td>
+			<td id="fatcal"></td>
+		</tr>
+	</table>
+
+    </div>
+    </div>
+
+
+
+
+<div id="inputcalc">
+	<br><br><h2 id="h">Your Intake</h2>
+    <span id="break"></span>
+   <table  id="table2">
+		
+		<tr>
+			<td>Status</td>
+			<td>Calories</td>
+			<td>Water (in ml)</td>
+			<td>Carbohydrates (in grams)</td>
+			<td>Proteins (in grams)</td>
+			<td>Fat (in grams)</td>
+
+		</tr>
+		<tr>
+			<td><strong>Calories Consumed</strong></td>
+			<td id="tablecal" class="table2"></td>
+			<td id="tablewat" class="table2"></td>
+			<td id="tablecarb" class="table2"></td>
+			<td id="tableprot" class="table2"></td>
+			<td id="tablefat" class="table2"></td>
+		</tr>
+		    <td><strong>Calories Remaining</strong></td>
+		    <td id="calrem" class="table2"></td>
+			<td id="watrem" class="table2"></td>
+			<td id="carbrem" class="table2"></td>
+			<td id="protrem" class="table2"></td>
+			<td id="fatrem"class="table2"></td>
+		</tr>
+	</table>
+	<div id="form2">
+	<label for="food">Food Item</label><br>
+	<input type="text" name="food" id="food"><br><br>
+	<br>
+	<label for="foodcal">Calories consumed</label><br>
+	<input type="text" name="caloiresconsumed" id="foodcal"><br><br>
+	<br>
+	<label for="fluid">Water consumed </label><br>
+	<input type="text" name="waterconsumed" id="fluid" placeholder=" in ml"><br><br>
+	<br>
+	<label for="consumedcarb">Carbohydrates consumed</label><br>
+	<input type="text" name="" id="consumedcarb" placeholder=" in grams"><br><br>
+	<br>
+	<label for="consumedprot">Proteins consumed</label><br>
+	<input type="text" name="" id="consumedprot" placeholder=" in grams"><br><br>
+	<br>
+	<label for="consumedfat">Fat consumed</label><br>
+	<input type="text" name="" id="consumedfat" placeholder=" in grams">
+	<br>
+	<button id="save">Save</button>
+	<button id="submit2">Submit</button>
+	<button id="reset2">Reset</button>
+	<br>
+    </div>
+    <
+</div>
+	
+</section>	
+
+
+
+<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
