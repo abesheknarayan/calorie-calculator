@@ -543,7 +543,7 @@ submit2.addEventListener("click",function()
 });
 reset2.addEventListener("click",function()
 {
-	localStorage.setItem("calories","0");
+	localStorage.setItem("calories",0);
 	localStorage.setItem("water",0);
 	localStorage.setItem("carbohydrates",0);
 	localStorage.setItem("protein",0);
