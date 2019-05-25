@@ -543,12 +543,21 @@ submit2.addEventListener("click",function()
 });
 reset2.addEventListener("click",function()
 {
-	localStorage.setItem("calories",0);
-	localStorage.setItem("water",0);
-	localStorage.setItem("carbohydrates",0);
-	localStorage.setItem("protein",0);
-	localStorage.setItem("fat",0);
-
+	localStorage.removeItem("calories");
+	localStorage.removeItem("water");
+	localStorage.removeItem("carbohydrates");
+	localStorage.removeItem("protein");
+	localStorage.removeItem("fat");
+	 tablecal.style.color="black";
+	  tablewat.style.color="black";
+	   tablecarb.style.color="black";
+	    tableprot.style.color="black";
+	     tablefat.style.color="black";
+    calcon=0;
+    watercon=0;
+    consumedfat1=0;
+    consumedprot1=0;
+    consumedfat1=0;
 	tablecal.textContent=0;
     tablewat.textContent=0;
     tablecarb.textContent=0;
@@ -559,11 +568,6 @@ reset2.addEventListener("click",function()
     carbrem.textContent=carbo;
     protrem.textContent=protein;
     fatrem.textContent=fat;
-    tablecal.style.color=black;
-    tablefat.style.color=black;
-    tableprot.style.color=black;
-    tablecarb.style.color=black;
-    tablewat.style.color=black;
-
+    
 
 });
